@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+
+    <h1 class="text-center py-5">Form</h1>
+
+    <div class="container">
+
+        <form id="formulaire" class="my-5">
+            <div class="row">
+                <div class="d-flex column">
+                    <div class="f-part col-6">
+                        <div class="mb-3 w-25">
+                            <label for="formFile" class="form-label " type="text">First name</label>
+                            <input class="form-control" id="Fname">
+                            <p id="msg1" class="text-danger d-none">* Ce champ ne dois pas contenir de chiffres</p>
+                            <p id="msg2" class="text-danger d-none">* Ce champ dois contenir entre 3 et 20 caracteres</p>
+                        </div>
+                        <div class="mb-3 w-25">
+                            <label for="formFileMultiple" class="form-label">Last name</label>
+                            <input class="form-control " id="Lname" multiple>
+                            <p id="msg3" class="text-danger d-none">* Ce champ ne dois pas contenir de chiffres</p>
+                            <p id="msg4" class="text-danger d-none">* Ce champ dois contenir entre 3 et 20 caracteres</p>
+                        </div>
+                        <div class="mb-3 w-25">
+                            <label for="formFile" class="form-label">Email</label>
+                            <input class="form-control" type="email" aria-describedby="emailHelp" id="Email">
+                            <p id="msg5" class="text-danger d-none">* Ce champ dois contenir un @</p>
+                        </div>
+                        <div class="mb-3 w-25">
+                            <label for="formFile" class="form-label">Password</label>
+                            <input class="form-control" type="password" id="Password">
+                            <p id="msg6" class="text-danger d-none">* Ce champ dois contenir une majuscule et 8 caracteres min.</p>
+                        </div>
+                        <div class="mb-3 w-25">
+                            <label for="formFile" class="form-label">Adress</label>
+                            <input class="form-control" id="Adress">
+                        </div>
+                    </div>
+                    <div class="sec-part col-6">
+                        <div class="mb-3 w-25">
+                            <label for="formFile" class="form-label">Phone Number</label>
+                            <input class="form-control" id="Phone">
+                            <p id="msg7" class="text-danger d-none">* Ce champ ne dois contenir que des chiffres</p>
+                            <p id="msg8" class="text-danger d-none">* Ce champ dois contenir 10 chiffres</p>
+                        </div>
+                        <div>
+                            <input class="contract" type="radio" id="cdi" name="contrat" value="cdi">
+                            <label for="cdi">CDI</label>
+                        </div>
+                        <div>
+                            <input class="contract" type="radio" id="cdd" name="contrat" value="cdd">
+                            <label for="cdd">CDD</label>
+                        </div>
+                        <div class="mb-3 w-25 my-3">
+                            <label for="formFile" class="form-label">Birthday</label>
+                            <input class="form-control" type="date" id="Birthday">
+                            <p id="msg9" class="text-danger d-none">* Vous n'avez pas l'âge requis</p>
+                        </div>
+                        <div class="mb-3 w-25">
+                            <label for="formFile" class="form-label">Entry</label>
+                            <input class="form-control" type="date" id="Entry">
+                        </div>
+                        <div class="form-check form-check-inline mb-3">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male"
+                                value="male">
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline mb-3">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female"
+                                value="female">
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+            <button type="submit" class="btn btn-light" id="btn">Submit</button>
+        </form>
+
+
+        <table class="table table-light table-hover my-5">
+            <thead>
+                <tr class="bg-dark">
+                    <th scope="col"></th>
+                    <th scope="col">FIRST NAME</th>
+                    <th scope="col">LAST NAME</th>
+                    <th scope="col">EMAIL</th>
+                    <th scope="col">BIRTHDAY</th>
+                    <th scope="col">PHONE NUMBER</th>
+                    <th scope="col">ADRESS</th>
+                    <th scope="col">ENTRY</th>
+                    <th scope="col">CONTRACT</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
